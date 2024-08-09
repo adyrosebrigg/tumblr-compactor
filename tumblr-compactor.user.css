@@ -12,9 +12,11 @@ ul[tabindex="-1"] > [title="Get a domain"],
 
 /* Hide Ad-free Ad in left sidebar */
 ul[tabindex="-1"] > button,
+[aria-label="Go Premium"],
 
 /* Hide "t" logo in left compact sidebar */
 [aria-label="Home"],
+
 
 #glass-container div:has(> [role="contentinfo"]) {
     display: none;
@@ -93,7 +95,8 @@ main > div:has(button[aria-label="Restore timeline to what it was when you last 
 
 /****** Right Sidebar Changes ******/
 /* Hide Ad-free Ad in right sidebar */
-#base-container > div > div > div > div > div > aside > button {
+#base-container > div > div > div > div > div > aside > button,
+div[style="margin-left:8px;margin-right:8px"] {
     display: none;
 }
 
