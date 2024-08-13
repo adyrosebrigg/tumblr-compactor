@@ -11,14 +11,10 @@ li[title="TumblrMart"],
 ul[tabindex="-1"] > [title="Get a domain"],
 
 /* Hide Ad-free Ad in left sidebar */
-ul[tabindex="-1"] > button,
 [aria-label="Go Premium"],
 
 /* Hide "t" logo in left compact sidebar */
-[aria-label="Home"],
-
-
-#glass-container div:has(> [role="contentinfo"]) {
+[aria-label="Home"] {
     display: none;
 }
 
