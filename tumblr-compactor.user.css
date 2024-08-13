@@ -11,7 +11,7 @@ li[title="TumblrMart"],
 ul[tabindex="-1"] > [title="Get a domain"],
 
 /* Hide Ad-free Ad in left sidebar */
-[aria-label="Go Premium"],
+ul[tabindex="-1"] > button,
 
 /* Hide "t" logo in left compact sidebar */
 [aria-label="Home"] {
