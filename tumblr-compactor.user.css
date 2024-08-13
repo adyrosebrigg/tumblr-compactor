@@ -11,94 +11,79 @@ li[title="TumblrMart"],
 ul[tabindex="-1"] > [title="Get a domain"],
 
 /* Hide Ad-free Ad in left sidebar */
-ul[tabindex="-1"] > button,
+[aria-label="Go Premium"],
 
 /* Hide "t" logo in left compact sidebar */
 [aria-label="Home"] {
-    display: none;
-}
+    display: none; }
 
 /* Reposition "Create"/New Post button to top of left sidebar */
 div:has(> [aria-label="Create a post"]) {
     position: absolute;
-    top: 3px;
-}
+    top: 3px; }
+
 @media (max-width: 989px) {
     div:has(> [aria-label="Create a post"]) {
         width: 315px;
-        margin-left: 45px;
-    }
+        margin-left: 45px; }
     div > a[aria-label="Create a post"][role=button] {
-        padding: 8px 0;
-    }
-}
+        padding: 8px 0; }}
 
 /* Lower the rest of the buttons in left sidebar to accomodate "Create" button */
 [role="banner"] nav {
-    margin-top: 15px;
-}
+    margin-top: 15px; }
 
 /****** Main Dashboard Column Changes ******/
 /* Tumblr header "t" logo (small viewport) */
 header [aria-label="Home"] {
-    display: none;
-}
+    display: none; }
 
 /* Hide Dashboard Tab Selector */
 main > [style^="--offset:"] {
-    display: none;
-}
+    display: none; }
 
 /* Make top header transparent */
 header:has([aria-label="Search"]) {
-    background: transparent !important;
-}
+    background: transparent !important; }
 
 /* Raise dashboard offset in small viewport */
 @media (max-width: 989px) {
     #base-container div:has(> main) {
         position: absolute;
-        top: 10px;
-    }
-}
+        top: 10px; }}
 
 /* Hide New Post Buttons at top of dash */
 main > div:has([aria-label="Quote"]) {
-    display: none;
-}
+    display: none; }
 
 /* Hide Carousels in dashboard */
 [data-cell-id^="timelineObject:title:"],
 [data-cell-id^="watermark_carousel"],
 [data-cell-id^="timelineObject:carousel:"] {
-    display: none;
-}
+    height: 0 !important;
+    overflow: hidden !important; }
+
 
 /* Hide mini follow buttons in posts */
 article [aria-label="Follow"] {
-    display: none;
-}
+    display: none; }
 
 /* Hide badges */
 [style^="--badges-index:"] {
-    display: none;
-}
+    display: none; }
 
 /* "Now, where were we?" */
 main > div:has(button[aria-label="Restore timeline to what it was when you last viewed it"]) {
-    display: none;
-}
+    display: none; }
 
 /****** Right Sidebar Changes ******/
 /* Hide Ad-free Ad in right sidebar */
-#base-container > div > div > div > div > div > aside > button,
-div[style="margin-left:8px;margin-right:8px"] {
-    display: none;
-}
+ul[tabindex="-1"] > button,
+aside [style^="margin"] {
+    display: none; }
 
 /* Hide anything in right sidebar with an h1, such as Radar, Suggested Blogs, and Sponsored. Not heavily tested, may break things. Also hide footer with mostly useless links. */
 aside > div:has(h1),
 aside > [role="contentinfo"] {
-    display: none;
-}
+    display: none; }
 }
