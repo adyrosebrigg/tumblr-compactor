@@ -63,6 +63,10 @@ main > div:has([aria-label="Quote"]) {
     height: 0 !important;
     overflow: hidden !important; }
 
+/* Hide when there is an answertime banner */
+[data-cell-id]:has([href="https://www.tumblr.com/explore/answertime"]) {
+    height: 0 !important;
+    overflow: hidden !important; }
 
 /* Hide mini follow buttons in posts */
 article [aria-label="Follow"] {
